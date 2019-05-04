@@ -14,7 +14,7 @@ public class kk
 	@Test
 	public void test1()
 	{
-		Queue q = new Queue(2);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		q.enqueue(2);
 		//Object i = q.dequeue();
@@ -29,7 +29,7 @@ public class kk
 	@Test
 		public void test2()
 	{
-		Queue q = new Queue(2);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		q.enqueue(2);
 		Object i = q.dequeue();
@@ -41,7 +41,7 @@ public class kk
 	@Test
 		public void test3()
 	{
-		Queue q = new Queue(2);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		assertEquals(false, q.isFull());	
 	}
@@ -54,7 +54,7 @@ public class kk
 	@Test
 			public void test6()
 	{
-		Queue q = new Queue(1);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		assertEquals(false, q.isEmpty());	
 	}
@@ -79,7 +79,7 @@ public class kk
  */		
 	@Test
 	public void test8() {
-		Queue q = new Queue(2);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		q.enqueue(2);
 		assertEquals(true, q.isFull());
@@ -91,7 +91,7 @@ public class kk
 	 */		
 	@Test
 	public void test5() {
-		Queue q = new Queue(3);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		q.enqueue(2);
 		q.dequeue();
@@ -106,7 +106,7 @@ public class kk
 	@Test(expected=IllegalStateException.class)
 	public void test4()
 	{
-		Queue q = new Queue(2);
+		QueueL q = new QueueL();
 		q.enqueue(1);
 		q.enqueue(2);
 		q.dequeue();
